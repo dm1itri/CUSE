@@ -1,13 +1,14 @@
-'''https://education.yandex.ru/ege/task/15e49bb8-3179-465b-baaa-e11efdd21bf0'''
+"""https://education.yandex.ru/ege/task/15e49bb8-3179-465b-baaa-e11efdd21bf0"""
+
 from operator import itemgetter
 
 
 def func(i):
     i = i.split()
-    return int(i[0]), int(i[0]) + int(i[1]), i[2] == 'B'
+    return int(i[0]), int(i[0]) + int(i[1]), i[2] == "B"
 
 
-with open('parking1.txt') as f:
+with open("parking1.txt") as f:
     n = int(f.readline())
     sp = sorted(map(func, f.readlines()))
 
@@ -35,4 +36,3 @@ for i in sp:
         count_bus += 1
 
 print(count_bus, count_skip)
-

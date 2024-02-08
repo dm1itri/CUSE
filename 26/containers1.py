@@ -1,5 +1,6 @@
-'''https://education.yandex.ru/ege/task/d153be02-c95b-489d-86f0-e9fe7d0b01cf'''
-with open('containers1.txt', 'r') as f:
+"""https://education.yandex.ru/ege/task/d153be02-c95b-489d-86f0-e9fe7d0b01cf"""
+
+with open("containers1.txt", "r") as f:
     n = int(f.readline())
     sp = sorted(map(int, f.readlines()), reverse=True)
 

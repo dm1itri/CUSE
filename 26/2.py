@@ -1,7 +1,8 @@
-'''https://education.yandex.ru/ege/task/358d9262-2ade-410e-81e3-62c0790aeeb3'''
-with open('2.txt') as f:
+"""https://education.yandex.ru/ege/task/358d9262-2ade-410e-81e3-62c0790aeeb3"""
+
+with open("2.txt") as f:
     n, m = map(int, f.readline().split())
-    sp = sorted((int(i.split()[0]),  int(i.split()[1] != 'Q')) for i in f.readlines())
+    sp = sorted((int(i.split()[0]), int(i.split()[1] != "Q")) for i in f.readlines())
 #  Q == 0
 
 new_sp = []

@@ -6,7 +6,7 @@
 
 for i in range(12345, 12445 + 1):
     sp = set()
-    for j in range(2, int(i ** 0.5) + 1):
+    for j in range(2, int(i**0.5) + 1):
         if i % j == 0:
             sp.add(j)
             sp.add(i // j)
