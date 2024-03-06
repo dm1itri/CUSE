@@ -9,3 +9,4 @@ for i in range(1, len(s)):
     if s[i - 1] == "A":
         d[s[i]] = d.get(s[i], 0) + 1
 print(max(key for key, value in d.items() if value == max(d.values())))
+
